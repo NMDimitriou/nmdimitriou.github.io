@@ -175,7 +175,25 @@
     <section id="gallery" style="z-index: 5">
     <h3>Gallery</h3>
     <div class="image-grid">
-      <?php include 'import_images.php'; ?>
+
+      <script>
+        const imageContainer = document.getElementById('image-container');
+        const imageDirectory = 'images/';
+        const imageType = '.jpg';
+
+        // Get the number of images in the directory
+        let numImages = 18; // replace with your own number of images
+
+        // Dynamically create the img elements and add them to the container
+        for (let i = 1; i <= numImages; i++) {
+          const imageSrc = imageDirectory + i + imageType;
+          const imageAlt = 'Image ' + i;
+          const imgElement = document.createElement('img');
+          imgElement.src = imageSrc;
+          imgElement.alt = imageAlt;
+          imageContainer.appendChild(imgElement);
+        }
+      </script>
 
 
       <!--
