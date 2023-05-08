@@ -188,7 +188,7 @@
     <div class="image-grid">
 
       <?php
-          $files = scandir('/home/nikos/nmdimitriou/images/');
+          $files = scandir('images/');
           foreach($files as $file) {
               if($file !== "." && $file !== "..") {
                   echo "<img src='$file' />";
