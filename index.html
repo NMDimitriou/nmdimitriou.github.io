@@ -175,104 +175,121 @@
     <section id="gallery" style="z-index: 5">
     <h3>Gallery</h3>
     <div class="image-grid">
-
-      <script>
-        const imageContainer = document.getElementById('image-container');
-        const imageDirectory = 'images/';
-        const imageType = '.jpg';
-
-        // Get the number of images in the directory
-        let numImages = 18; // replace with your own number of images
-
-        // Dynamically create the img elements and add them to the container
-        for (let i = 1; i <= numImages; i++) {
-          const imageSrc = imageDirectory + i + imageType;
-          const imageAlt = 'Image ' + i;
-          const imgElement = document.createElement('img');
-          imgElement.src = imageSrc;
-          imgElement.alt = imageAlt;
-          imageContainer.appendChild(imgElement);
-        }
-      </script>
-
-
-      <!--
-      <img src="images/_MG_6851_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-      <img src="images/_MG_6864_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-      <img src="images/_MG_6892_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-      <img src="images/_MG_6903_thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-      <img src="images/_MG_6946_thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-      <img src="images/pan_thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-      <img src="images/_MG_6954_thumb.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-      <img src="images/_MG_6817_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6811_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6726_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6727_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6730_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6734_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6737_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6742_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/_MG_6747_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      <img src="images/sounio_1_thumb.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-    -->
+      <img src="images/thumbs/_MG_6851_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6864_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6892_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6903_thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6946_thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="images/thumbs/pan_thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6954_thumb.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6817_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6811_thumb.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6726_thumb.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6727_thumb.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6730_thumb.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6734_thumb.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6737_thumb.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6742_thumb.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+      <img src="images/thumbs/_MG_6747_thumb.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+      <img src="images/thumbs/sounio_1_thumb.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
     </div>
 
     <div id="myModal" class="modal" style="z-index: 6">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-        <?php include 'display_images.php'; ?>
-        <!--
         <div class="mySlides">
-          <div class="numbertext">1 / 10</div>
-          <img src="images/_MG_6851.jpg">
+          <div class="numbertext">1 / 17</div>
+          <img src="images/original/_MG_6851.jpg" alt="Vikos canyon, Beloi, Greece, 2022">
+          <div class="caption">Vikos canyon, Beloi, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">2 / 10</div>
-          <img src="images/_MG_6864.jpg">
+          <div class="numbertext">2 / 17</div>
+          <img src="images/original/_MG_6864.jpg" alt="Misiou ancient stone bridge, Voidomatis river, Greece, 2022">
+          <div class="caption">Misiou ancient stone bridge, Voidomatis river, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">3 / 10</div>
-          <img src="images/_MG_6892.jpg">
+          <div class="numbertext">3 / 17</div>
+          <img src="images/original/_MG_6892.jpg" alt="Kapesovo village, Greece, 2022">
+          <div class="caption">Kapesovo village, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">4 / 10</div>
-          <img src="images/_MG_6903.jpg">
+          <div class="numbertext">4 / 17</div>
+          <img src="images/original/_MG_6903.jpg" alt="One of the hundreds ancient stone bridges of Ioannina, Greece, 2022">
+          <div class="caption">One of the hundreds ancient stone bridges of Ioannina, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">5 / 10</div>
-          <img src="images/_MG_6946.jpg" style="height: 800px; width: auto;">
+          <div class="numbertext">5 / 17</div>
+          <img src="images/original/_MG_6946.jpg" style="height: 800px; width: auto;" alt="Iliochori village, Greece, 2022">
+          <div class="caption">Iliochori village, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">6 / 10</div>
-          <img src="images/pan.jpg">
+          <div class="numbertext">6 / 17</div>
+          <img src="images/original/pan.jpg" alt="Vikos canyon, Panoramic view from Holy Monastery of Saint Paraskevi, Greece, 2022">
+          <div class="caption">Vikos canyon, Panoramic view from Holy Monastery of Saint Paraskevi, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">7 / 10</div>
-          <img src="images/_MG_6954.jpg">
+          <div class="numbertext">7 / 17</div>
+          <img src="images/original/_MG_6954.jpg" alt="Athens, Greece, 2022">
+          <div class="caption">Athens, Greece, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">8 / 10</div>
-          <img src="images/_MG_6817.jpg">
+          <div class="numbertext">8 / 17</div>
+          <img src="images/original/_MG_6817.jpg" alt="Zapallo Bay, Cyprus, 2022">
+          <div class="caption">Zapallo Bay, Cyprus, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">9 / 10</div>
-          <img src="images/sounio_1.jpg">
+          <div class="numbertext">9 / 17</div>
+          <img src="images/original/_MG_6811.jpg" style="height: 800px; width: auto;" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
         </div>
         <div class="mySlides">
-          <div class="numbertext">10 / 10</div>
-          <img src="images/sounio_1.jpg">
+          <div class="numbertext">10 / 17</div>
+          <img src="images/original/_MG_6726.jpg" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
         </div>
-      -->
+        <div class="mySlides">
+          <div class="numbertext">11 / 17</div>
+          <img src="images/original/_MG_6727.jpg" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 17</div>
+          <img src="images/original/_MG_6730.jpg" style="height: 800px; width: auto;" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">13 / 17</div>
+          <img src="images/original/_MG_6734.jpg" style="height: 800px; width: auto;" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">14 / 17</div>
+          <img src="images/original/_MG_6737.jpg" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 17</div>
+          <img src="images/original/_MG_6742.jpg" alt="Vancouver, Seaplanes, Canada, 2022">
+          <div class="caption">Vancouver, Seaplanes, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">16 / 17</div>
+          <img src="images/original/_MG_6747.jpg" alt="Vancouver, View from above, Canada, 2022">
+          <div class="caption">Vancouver, View from above, Canada, 2022</div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">17 / 17</div>
+          <img src="images/original/sounio_1.jpg" alt="Cape Sounio, Greece, 2019">
+          <div class="caption">Cape Sounio, Greece, 2019</div>
+        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+<!--
         <div class="caption-container">
           <p id="caption"></p>
         </div>
 
-        <?php include 'slide_images.php'; ?>
-<!--
         <div class="row" style="z-index: 7">
         <div class="column">
           <img class="demo cursor" src="images/_MG_6851_thumb.jpg" onclick="currentSlide(1)" alt="Vikos canyon, Beloi, Greece, 2022">
@@ -301,13 +318,36 @@
           <img class="demo cursor" src="images/_MG_6817_thumb.jpg" onclick="currentSlide(8)" alt="Zapallo Bay, Cyprus, 2022">
         </div>
         <div class="column">
-          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(9)" alt="Cape Sounio, Greece, 2019">
+          <img class="demo cursor" src="images/_MG_6811_thumb.jpg" onclick="currentSlide(9)" alt="Ottawa, Canada, 2022">
         </div>
         <div class="column">
-          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(10)">
+          <img class="demo cursor" src="images/_MG_6726_thumb.jpg" onclick="currentSlide(10)" alt="Vancouver, Seaplanes, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6727_thumb.jpg" onclick="currentSlide(11)" alt="Vancouver, Seaplanes, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6730_thumb.jpg" onclick="currentSlide(12)" alt="Vancouver, Seaplanes, Canada, 2022">
         </div>
       </div>
--->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6734_thumb.jpg" onclick="currentSlide(13)" alt="Vancouver, Seaplanes, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6737_thumb.jpg" onclick="currentSlide(14)" alt="Vancouver, Seaplanes, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6742_thumb.jpg" onclick="currentSlide(15)" alt="Vancouver, Seaplanes, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6747_thumb.jpg" onclick="currentSlide(16)" alt="Vancouver, View from above, Canada, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(17)" alt="Cape Sounio, Greece, 2019">
+        </div>
+      </div>
+    -->
     </div>
   </div>
   </section>

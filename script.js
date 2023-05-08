@@ -79,3 +79,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 });
+
+document.addEventListener("keydown", function(event) {
+  if (event.keyCode === 37) {  // left arrow
+    plusSlides(-1);
+  } else if (event.keyCode === 39) {  // right arrow
+    plusSlides(1);
+  }
+});
