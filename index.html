@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikolaos Dimitriou</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        margin-right: 5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 9998;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+     transition: margin-left .5s;
+     padding: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="mySidenav"; class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+
+    <div style="position:fixed; top:0px; left: 0px; width: 100%; height: 10px; background-color: white; z-index: 1;" >
+
+    </div>
+
+    <div style="font-size:30px;cursor:pointer; position:fixed; top:10px; left: 10px; width: 100%; height: 50px; background-color: white; z-index: 2;" onclick="openNav()" >&#9776;
+
+    </div>
+
+    <div class="header" id="myHeader" onclick="closeNav()" style="position: fixed; top: 0; left: 0; width: 100%; background-color: white; z-index: 3;">
+      <h1>Nikolaos Dimitriou</h1>
+      <h2>PhD Candidate, Bioengineering</h2>
+    </div>
+
+    <main  onclick="closeNav()"; id="main">
+
+      <section id="about" style="margin-top: 250px">
+        <h3>About</h3>
+        <p>Nikolaos (Nikos) is a PhD candidate in the Department of Bioengineering at McGill working on
+          mathematical modelling of cancer growth. His research aims to uncover and quantify the underlying
+          biophysical mechanisms of cancer growth using mathematical models and 3D cell culture experiments.
+          During his PhD studies, he focused on (1) the problem of validating hybrid multiscale models with
+          3D culture data, (2) the investigation of sedimentation phenomena in 3D hydrogel cultures, and (3)
+          the design of multiscale models by combining tumour growth and the expression profiles of genes
+          related to drug resistance. Nikos
+          has a background in applied mathematics and physics, in which he received his diploma from the
+          National Technical University of Athens. He is also the recipient of the prestigious
+          Stavros Niarchos, and Werner Graupe fellowships.</p>
+      </section>
+      <section id="publications">
+        <h3>Publications</h3>
+        <h4 class="publications-heading">Preprints</h4>
+        <ol class="publications-list">
+          <li>
+            <h5 class="publications-title">A calibration and uncertainty quantification analysis of classical, fractional
+            and multiscale logistic models of tumour growth.</h5>
+            <p class="journal-info">Dimitriou, N. M., Demirag, E., Strati, K., & Mitsis, G. D.</p>
+            <p>BioRxiv (2023). <a href="https://doi.org/10.1101/2023.04.12.536622"> Link to preprint. </a> <span class="__dimensions_badge_embed__" data-doi="10.1101/2023.04.12.536622" data-hide-zero-citations="true" data-style="large_rectangle"></span> </p>
+          </li>
+          <li>
+            <h5 class="publications-title">Cancer cell sedimentation in 3D cultures reveals active migration
+              regulated by self-generated gradients and adhesion sites.</h5>
+            <p class="journal-info">Dimitriou, N. M., Flores-Torres, S., Kyriakidou, M., Kinsella, J. M., & Mitsis, G. D.</p>
+            <p>BioRxiv (2023). <a href="https://doi.org/10.1101/2023.02.15.528731"> Link to preprint. </a>
+            <span class="__dimensions_badge_embed__" data-doi="10.1101/2023.02.15.528731" data-hide-zero-citations="true" data-style="large_rectangle"></span></p>
+          </li>
+      </ol>
+      <h4 class="publications-heading">Journal Articles</h4>
+      <ol class="publications-list">
+        <li>
+          <h5 class="publications-title">Quantifying the Morphology and Mechanisms of Cancer Progression in 3D in-vitro environments: Integrating Experiments
+         and Multiscale Models.</h5>
+          <p class="journal-info">Dimitriou, N. M., Flores-Torres, S., Kinsella, J. M., & Mitsis, G. D.</p>
+          <p>IEEE Transactions on Biomedical Engineering (2022). <a href="https://doi.org/10.1109/TBME.2022.3216231"> Link to publication. </a>
+          <a href="https://www.biorxiv.org/content/10.1101/2021.11.16.468856v9"> Link to preprint. </a>
+          <span class="__dimensions_badge_embed__" data-doi="10.1109/TBME.2022.3216231" data-style="large_rectangle"></span></p>
+        </li>
+        <li>
+          <h5 class="publications-title">Detection and Spatiotemporal Analysis of In-vitro 3D Migratory
+         Triple-Negative Breast Cancer Cells. Annals of Biomedical Engineering.</h5>
+          <p class="journal-info">Dimitriou, N. M., Flores-Torres, S., Kinsella, J. M., & Mitsis, G. D.</p>
+          <p>Annals of Biomedical Engineering (2022). <a href="https://doi.org/10.1007/s10439-022-03022-y">Link to publication. </a>
+          <a href="https://t.co/k1btdPEYG4"> Link to PDF. </a>
+          <span class="__dimensions_badge_embed__" data-doi="10.1007/s10439-022-03022-y" data-style="large_rectangle"></span></p>
+        </li>
+        <li>
+          <h5 class="publications-title">Prediction of Gold Nanoparticle and Microwave-Induced Hyperthermia
+         Effects on Tumor Control via a Simulation Approach.</h5>
+          <p class="journal-info">Dimitriou, N. M. N. M., Pavlopoulou, A., Tremi, I., Kouloulias, V., Tsigaridas, G., & Georgakilas, A. G.</p>
+          <p>Nanomaterials 9(2) (2019). <a href="https://doi.org/10.3390/nano9020167">Link to publication. </a>
+          <span class="__dimensions_badge_embed__" data-doi="10.3390/nano9020167" data-style="large_rectangle"></span></p>
+        </li>
+        <li>
+          <h5 class="publications-title">Gold nanoparticles, radiations and the immune system: Current insights into the physical mechanisms and the biological interactions of this new alliance
+         towards cancer therapy.</h5>
+          <p class="journal-info">Dimitriou, N. M., Tsekenis, G., Balanikas, E. C., Pavlopoulou, A., Mitsiogianni, M., Mantso,
+          T., Pashos, G., Boudouvis, A. G., Lykakis, I. N., Tsigaridas, G., Panayiotidis, M. I., Yannopapas,
+          V., & Georgakilas, A. G.</p>
+          <p>Pharmacology and Therapeutics, 178, 1–17 (2017). <a href="https://doi.org/10.1016/j.pharmthera.2017.03.006">Link to publication. </a>
+          <span class="__dimensions_badge_embed__" data-doi="10.1016/j.pharmthera.2017.03.006" data-style="large_rectangle"></span></p>
+        </li>
+    </ol>
+      </section>
+      <section id="teaching">
+      <h3>Teaching</h3>
+      <ul class="publications-list">
+        <li>
+          <p>Biological Transport Phenomena 2 (BIEN 340), TA, Instructor: Dr. Lawrence Oprea (2023)</p>
+        </li>
+        <li>
+          <p>Engineering Principles in Physiological Systems (BIEN 462), TA, Instructor: Prof. Charles Capaday (2022)</p>
+        </li>
+        <li>
+          <p>Biosignals and Systems and Control (BIEN 350), TA, Instructors: Prof. Charles Capaday, Georgios Mitsis (2021-2022)</p>
+        </li>
+      </ul>
+      </section>
+
+    <section id="gallery" style="z-index: 5">
+
+      <?php
+
+        $son = 5;
+        $nos =10;
+
+        echo $son + $nos;
+
+      ?>
+
+    <h3>Gallery</h3>
+
+    <div class="image-grid">
+
+      <?php
+          $files = scandir('/home/nikos/nmdimitriou/images/');
+          foreach($files as $file) {
+              if($file !== "." && $file !== "..") {
+                  echo "<img src='$file' />";
+              }
+          }
+      ?>
+
+
+      <!--
+      <img src="images/_MG_6851_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <img src="images/_MG_6864_thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <img src="images/_MG_6892_thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <img src="images/_MG_6903_thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <img src="images/_MG_6946_thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      <img src="images/pan_thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      <img src="images/_MG_6954_thumb.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+      <img src="images/_MG_6817_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6811_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6726_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6727_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6730_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6734_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6737_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6742_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/_MG_6747_thumb.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+      <img src="images/sounio_1_thumb.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    -->
+    </div>
+
+    <div id="myModal" class="modal" style="z-index: 6">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <?php include 'display_images.php'; ?>
+        <!--
+        <div class="mySlides">
+          <div class="numbertext">1 / 10</div>
+          <img src="images/_MG_6851.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 10</div>
+          <img src="images/_MG_6864.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 10</div>
+          <img src="images/_MG_6892.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 10</div>
+          <img src="images/_MG_6903.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 10</div>
+          <img src="images/_MG_6946.jpg" style="height: 800px; width: auto;">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 10</div>
+          <img src="images/pan.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 10</div>
+          <img src="images/_MG_6954.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 10</div>
+          <img src="images/_MG_6817.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">9 / 10</div>
+          <img src="images/sounio_1.jpg">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 10</div>
+          <img src="images/sounio_1.jpg">
+        </div>
+      -->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <?php include 'slide_images.php'; ?>
+<!--
+        <div class="row" style="z-index: 7">
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6851_thumb.jpg" onclick="currentSlide(1)" alt="Vikos canyon, Beloi, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6864_thumb.jpg" onclick="currentSlide(2)" alt="Misiou ancient stone bridge, Voidomatis river, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6892_thumb.jpg" onclick="currentSlide(3)" alt="Kapesovo village, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6904_thumb.jpg" onclick="currentSlide(4)" alt="One of the hundreds ancient stone bridges of Ioannina, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6946_thumb.jpg" onclick="currentSlide(5)" alt="Iliochori village, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/pan_thumb.jpg" onclick="currentSlide(6)" alt="Vikos canyon, Panoramic view from Holy Monastery of Saint Paraskevi, Greece, 2022">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6954_thumb.jpg" onclick="currentSlide(7)" alt="Athens, Greece, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/_MG_6817_thumb.jpg" onclick="currentSlide(8)" alt="Zapallo Bay, Cyprus, 2022">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(9)" alt="Cape Sounio, Greece, 2019">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(10)">
+        </div>
+      </div>
+-->
+    </div>
+  </div>
+  </section>
+
+
+    </main>
+    <footer>
+      <div style="display: flex; justify-content: space-between;">
+        <div> </div>
+        <div class="icon-container">
+        <a href="mailto:nikolaos.dimitriou@mail.mcgill.ca" class="icon-link">
+          <i class="far fa-envelope email-icon" style="color:grey;"></i>
+        </a>
+        <a href="https://twitter.com/NikosDim3" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <i class="fab fa-twitter twitter-icon" style="color:#1DA1F2;"></i>
+        </a>
+        <a href="https://github.com/NMDimitriou" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <i class="fab fa-github github-icon" style="color:#24292E;"></i>
+        </a>
+        <a href="https://orcid.org/0000-0001-5002-202X" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/256px-ORCID_iD.svg.png" class="orcid-icon">
+        </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
