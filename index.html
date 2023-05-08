@@ -173,29 +173,10 @@
       </section>
 
     <section id="gallery" style="z-index: 5">
-
-      <?php
-
-        $son = 5;
-        $nos =10;
-
-        echo $son + $nos;
-
-      ?>
-
     <h3>Gallery</h3>
-
     <div class="image-grid">
 
-      <?php
-          $files = scandir('/home/nikos/nmdimitriou/images/');
-          foreach($files as $file) {
-              if($file !== "." && $file !== "..") {
-                  echo "<img src='$file' />";
-              }
-          }
-      ?>
-
+      <?php include 'import_images.php'; ?>
 
       <!--
       <img src="images/_MG_6851_thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
