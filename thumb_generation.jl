@@ -1,8 +1,8 @@
 using ImageTransformations, Images, Graphics, Interpolations
 
-cd("/home/nikos/nmdimitriou.github.io/images/")
+cd("/home/nikos/nmdimitriou.github.io/images/original/")
 input_dir = "."
-output_dir = "."
+output_dir = "../thumbs/"
 #width = 400;
 height = 200;
 
