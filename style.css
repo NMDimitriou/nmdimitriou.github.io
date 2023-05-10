@@ -4,12 +4,12 @@
   padding: 0;
 }
 
-
+/*
 .container {
   display: inline-block;
   cursor: pointer;
 }
-
+*/
 
 body {
   font-family: Verdana, sans-serif;
@@ -90,6 +90,7 @@ header h2 {
 main {
   padding: 80px;
   margin-right: 0px;
+  width: 100%;
 }
 
 section h3 {
@@ -140,7 +141,7 @@ section p {
   /*
   font-size: 36px;
   width: 36px;*/
-  font-size: 2vw; /* Adjust the value as needed */
+  font-size: 36px; /* Adjust the value as needed */
 }
 
 .icon-link {
@@ -175,14 +176,14 @@ section p {
 }
 
 .orcid-icon {
-  width: 2vw;
+  width: 36px;
   /*height: 36px;*/
   /*font-size: 1vw;*/ /* Adjust the value as needed */
   object-fit: contain;
   vertical-align: middle;
 }
 
-
+/*
 footer {
     position: fixed;
     bottom: 0;
@@ -192,7 +193,7 @@ footer {
     padding: 5px 0;
     text-align: center;
   }
-
+*/
 
 
 #mySidenav {
@@ -250,7 +251,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 16px;}
 
    /* Apply styles for screens with a maximum width of 600px (typical for mobile devices) */
    /*
@@ -273,11 +274,19 @@ footer {
   h2 {
     font-size: 18px;
   }
-
-  .icon-container a{
-    width: 16px;
-  }
   */
+  .icon-container a{
+    font-size: 5vw;
+  }
+
+  .orcid-icon {
+    width: 5vw;
+    /*height: 36px;*/
+    /*font-size: 1vw;*/ /* Adjust the value as needed */
+    object-fit: contain;
+    vertical-align: middle;
+  }
+
 }
 
 /*
