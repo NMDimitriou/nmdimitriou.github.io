@@ -9,63 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        font-family: Verdana, sans-serif;
-        margin-right: 5;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 9998;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    #main {
-     transition: margin-left .5s;
-     padding: 50px;
-    }
-
-    /*
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-    */
-    </style>
-
   </head>
   <body>
 
@@ -82,7 +25,7 @@
 
     </div>
 
-    <div style="font-size:30px;cursor:pointer; position:fixed; top:10px; left: 10px; width: 100%; height: 50px; background-color: white; z-index: 2;" onclick="openNav()" >&#9776;
+    <div style="font-size:30px;cursor:pointer; position:fixed; top:10px; left: 20px; width: 100%; height: 50px; background-color: white; z-index: 2;" onclick="openNav()" >&#9776;
 
     </div>
 
@@ -184,7 +127,7 @@
           <p>Pharmacology and Therapeutics, 178, 1–17 (2017). <a href="https://doi.org/10.1016/j.pharmthera.2017.03.006">Link to publication. </a>
           <span class="__dimensions_badge_embed__" data-doi="10.1016/j.pharmthera.2017.03.006" data-style="large_rectangle"></span></p>
         </li>
-    </ol>
+      </ol>
       </section>
       <section id="teaching">
       <h3>Teaching</h3>
@@ -224,7 +167,7 @@
       <img src="images/thumbs/sounio_1_thumb.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
     </div>
 
-    <div id="myModal" class="modal" style="z-index: 6">
+    <div id="myModal" class="modal" style="z-index: 11">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
@@ -320,95 +263,11 @@
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-<!--
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <div class="row" style="z-index: 7">
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6851_thumb.jpg" onclick="currentSlide(1)" alt="Vikos canyon, Beloi, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6864_thumb.jpg" onclick="currentSlide(2)" alt="Misiou ancient stone bridge, Voidomatis river, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6892_thumb.jpg" onclick="currentSlide(3)" alt="Kapesovo village, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6904_thumb.jpg" onclick="currentSlide(4)" alt="One of the hundreds ancient stone bridges of Ioannina, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6946_thumb.jpg" onclick="currentSlide(5)" alt="Iliochori village, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/pan_thumb.jpg" onclick="currentSlide(6)" alt="Vikos canyon, Panoramic view from Holy Monastery of Saint Paraskevi, Greece, 2022">
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6954_thumb.jpg" onclick="currentSlide(7)" alt="Athens, Greece, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6817_thumb.jpg" onclick="currentSlide(8)" alt="Zapallo Bay, Cyprus, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6811_thumb.jpg" onclick="currentSlide(9)" alt="Ottawa, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6726_thumb.jpg" onclick="currentSlide(10)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6727_thumb.jpg" onclick="currentSlide(11)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6730_thumb.jpg" onclick="currentSlide(12)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6734_thumb.jpg" onclick="currentSlide(13)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6737_thumb.jpg" onclick="currentSlide(14)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6742_thumb.jpg" onclick="currentSlide(15)" alt="Vancouver, Seaplanes, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/MG_6747_thumb.jpg" onclick="currentSlide(16)" alt="Vancouver, View from above, Canada, 2022">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/sounio_1_thumb.jpg" onclick="currentSlide(17)" alt="Cape Sounio, Greece, 2019">
-        </div>
-      </div>
-    -->
     </div>
   </div>
   </section>
 
 
     </main>
-    <!--
-    <footer>
-      <div style="display: flex; justify-content: space-between;">
-        <div> </div>
-        <div class="icon-container">
-        <a href="mailto:nikolaos.dimitriou@mail.mcgill.ca" class="icon-link">
-          <i class="far fa-envelope email-icon" style="color:grey;"></i>
-        </a>
-        <a href="https://twitter.com/NikosDim3" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <i class="fab fa-twitter twitter-icon" style="color:#1DA1F2;"></i>
-        </a>
-        <a href="https://github.com/NMDimitriou" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <i class="fab fa-github github-icon" style="color:#24292E;"></i>
-        </a>
-        <a href="https://orcid.org/0000-0001-5002-202X" target="_blank" rel="noopener noreferrer" class="icon-link">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/256px-ORCID_iD.svg.png" class="orcid-icon">
-        </a>
-        </div>
-      </div>
-    -->
-    </footer>
   </body>
 </html>
