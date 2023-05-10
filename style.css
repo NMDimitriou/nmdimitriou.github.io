@@ -135,7 +135,7 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right:10px;
+  margin-right:0.6vw;
   transition: all 0.3s ease-in-out;
   /*
   font-size: 36px;
@@ -175,9 +175,9 @@ section p {
 }
 
 .orcid-icon {
-  width: 36px;
-  height: 36px;
-  font-size: 2vw; /* Adjust the value as needed */
+  width: 2vw;
+  /*height: 36px;*/
+  /*font-size: 1vw;*/ /* Adjust the value as needed */
   object-fit: contain;
   vertical-align: middle;
 }
@@ -345,6 +345,7 @@ footer {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 15;
 }
 
 .close:hover,
@@ -418,7 +419,7 @@ footer {
   color: rgba(0, 0, 0, 0.6); /*#f2f2f2;*/
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -448,19 +449,10 @@ img.hover-shadow {
 }
 
 .modal-content img {
-  width: 100%;
+  width: 90%;
 }
 
-
-.image-grid{
-  /* your existing styles */
-
-  width: 100%; /* Adjust the value as needed */
-  height: auto; /* Maintain aspect ratio */
-}
-
-@media screen and (max-width: 600px) {
-  .image-grid {
-    width: 50%; /* Adjust the value as needed for smaller screens */
-  }
+.image-grid img{
+  height:auto;
+  height:10vw
 }
