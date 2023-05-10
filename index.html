@@ -58,10 +58,12 @@
      padding: 50px;
     }
 
+    /*
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
     }
+    */
     </style>
 
   </head>
@@ -82,6 +84,24 @@
 
     <div style="font-size:30px;cursor:pointer; position:fixed; top:10px; left: 10px; width: 100%; height: 50px; background-color: white; z-index: 2;" onclick="openNav()" >&#9776;
 
+    </div>
+
+    <div class="social-icons" style="display: flex; justify-content: space-between;">
+      <div> </div>
+      <div class="icon-container">
+      <a href="mailto:nikolaos.dimitriou@mail.mcgill.ca" class="icon-link">
+        <i class="far fa-envelope email-icon" style="color:grey;"></i>
+      </a>
+      <a href="https://twitter.com/NikosDim3" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <i class="fab fa-twitter twitter-icon" style="color:#1DA1F2;"></i>
+      </a>
+      <a href="https://github.com/NMDimitriou" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <i class="fab fa-github github-icon" style="color:#24292E;"></i>
+      </a>
+      <a href="https://orcid.org/0000-0001-5002-202X" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/256px-ORCID_iD.svg.png" class="orcid-icon">
+      </a>
+      </div>
     </div>
 
     <div class="header" id="myHeader" onclick="closeNav()" style="position: fixed; top: 0; left: 0; width: 100%; background-color: white; z-index: 3;">
@@ -369,6 +389,7 @@
 
 
     </main>
+    <!--
     <footer>
       <div style="display: flex; justify-content: space-between;">
         <div> </div>
@@ -387,6 +408,7 @@
         </a>
         </div>
       </div>
+    -->
     </footer>
   </body>
 </html>

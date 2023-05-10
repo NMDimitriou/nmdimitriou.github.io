@@ -270,8 +270,10 @@ footer {
   width: 100%;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+
+/*@media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 50%;
@@ -279,7 +281,7 @@ footer {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
@@ -298,7 +300,6 @@ footer {
   height: 100%;
   overflow: auto;
   background-color: white;
-
 }
 
 /* Modal Content */
@@ -336,7 +337,6 @@ footer {
 
 /* Next & previous buttons */
 .prev{
-
   cursor: pointer;
   position: fixed;
   /*top: 50%;*/
@@ -424,4 +424,12 @@ img.hover-shadow {
 
 .modal-content img {
   width: 100%;
+}
+
+
+.social-icons {
+  position: fixed;
+  top: 20px; /* Adjust the top distance as needed */
+  right: 20px; /* Adjust the right distance as needed */
+  z-index: 10; /* Adjust the z-index as needed */
 }
