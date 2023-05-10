@@ -137,8 +137,10 @@ section p {
   align-items: center;
   margin-right:10px;
   transition: all 0.3s ease-in-out;
+  /*
   font-size: 36px;
-  width: 36px;
+  width: 36px;*/
+  font-size: 2vw; /* Adjust the value as needed */
 }
 
 .icon-link {
@@ -175,6 +177,7 @@ section p {
 .orcid-icon {
   width: 36px;
   height: 36px;
+  font-size: 2vw; /* Adjust the value as needed */
   object-fit: contain;
   vertical-align: middle;
 }
@@ -446,4 +449,18 @@ img.hover-shadow {
 
 .modal-content img {
   width: 100%;
+}
+
+
+.image-grid{
+  /* your existing styles */
+
+  width: 100%; /* Adjust the value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 600px) {
+  .image-grid {
+    width: 50%; /* Adjust the value as needed for smaller screens */
+  }
 }
