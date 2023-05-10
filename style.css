@@ -243,11 +243,11 @@ footer {
 
   /* Apply styles for screens with a maximum width of 600px (typical for mobile devices) */
   .bio-section {
-    width: 90%; /* Adjust the width as needed */
+    width: 95%; /* Adjust the width as needed */
     margin: 0 auto; /* Center the section horizontally */
   }
 
-  .about-section p {
+  .bio-section p {
     font-size: 14px; /* Adjust the font size as needed */
   }
 }
